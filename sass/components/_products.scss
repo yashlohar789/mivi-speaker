@@ -1,0 +1,219 @@
+.products{
+    @include inner;
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+
+    @include media(1023px){
+        flex-direction: column;
+    }
+
+    &__product{
+        flex-basis: 47%;
+        margin-top: 7rem;
+
+        @include media(1023px){
+           margin-top: 2rem;
+        }
+        
+
+        .img{
+             width: 100%;
+             
+             &.speaker1{
+                 display: block;
+             }
+
+             &.speaker2{
+                display: none;
+             }
+
+             &.speaker3{
+                display: none;
+             }
+
+             &.speaker4{
+                display:none;
+             }
+        }
+    }
+
+    &__details{
+        flex-basis: 47%;
+        @include flex;
+        flex-direction: column;
+
+        .colors-reviews{
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top:5rem;
+
+            @include media(550px){
+                flex-direction: column;
+            }
+        }
+    }
+
+    .colors-reviews-img{
+        width: 100%;
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media(550px){
+            order: 1;
+        }
+
+        @include media(480px){
+            flex-direction: column;
+        }
+             
+
+        .colors{
+
+            margin-top: 1rem;
+
+            @include media(480px){
+                margin-bottom: 1rem;
+            }
+
+            .col{
+                 width: 30px;
+                 height: 30px;
+                 border-radius: 50%;
+                 display: inline-block;
+                 margin-right: 1rem;
+                 
+                 &:first-child{
+                     border: 1.5px solid $primary-color;
+                     background-color: $black;
+                 }
+
+                 &.blue{
+                     background-color: rgb(38, 126, 197);
+                 }
+
+                 &.green{
+                    background-color: rgb(53, 167, 53);
+                }
+
+                &.red{
+                    background-color: rgb(206, 25, 25);
+                }
+            }
+        }
+
+        .reviews{
+            height: 29px;
+            background-color: $black;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .price-section{
+        width: 100%;
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem;
+
+        @include media(550px){
+            order: 6;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        
+        .price{
+
+            @include media(500px){
+                width: 100%;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+    
+            .discount{
+                color: $light-black;
+                font-size: 1.3rem;
+                font-weight: 400;
+                width: 100%;
+
+                .space{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: $light-black;
+                }
+
+                .red{
+                    color: rgb(201, 36, 36);
+                    font-weight: 500;
+                }
+
+                img{
+                    width: 65px;
+                    position: relative;
+                    top:13px;
+                }
+                .know{
+                    color: rgb(19, 113, 253);
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .cart{
+
+            @include media(550px){
+                margin-top: 2rem;
+            }
+            @include media(500px){
+                flex-basis: 100%;
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .services{
+        width: 100%;
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem 0;
+
+        @include media(550px){
+            order: 7
+        }
+
+        .box{
+              @include flex;
+              justify-content: space-between;
+              align-items: center;
+
+              @include media(500px){
+                  text-align: center;
+                   flex-direction: column;
+              }
+
+              img{
+                  width: 50%;
+              }
+
+              .text{
+                  font-weight: 600;
+                  font-size: 1.2rem;
+                  color: $light-black;
+                  margin-left: 1.2rem;
+
+                  @include media(500px){
+                    margin-top: 1rem;
+                    font-size: 1rem;
+                }
+              }
+        }
+    }
+}

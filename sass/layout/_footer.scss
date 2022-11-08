@@ -1,0 +1,22 @@
+.footersection{
+    width: 100%;
+    padding: 2rem;
+    background:radial-gradient(572.27% 153.85% at 48.42% 21.8%,#5b6378 0,#303642 39.67%,#111216 99.2%);
+    color: $white;
+    text-align: center;
+
+    .icon{
+        font-size: 2.2rem;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .name{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    
+        span{
+            font-weight: 600;
+        }
+    }
+}

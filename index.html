@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mivi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    <!--Header section starts here-->
+    <header class="header">
+        <section class="subheader-1">
+                <div class=" text text-left"><img src="img/icons/shipping-1.svg" alt=""><p>Free Shipping</p></div>
+                <div class=" text text-right"><img src="img/icons/warranty-1.svg" alt=""><p>1 Year Warranty</p></div>
+        </section>
+        <section class="subheader-2">
+            <div class="logo-section">
+                <img src="img/icons/hamburger.svg" alt="menu" class="menu">
+                <img src="img/logo.svg" alt="logo" class="logo">
+            </div>
+
+            <div class="navigation-section">
+                <ul>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Cables</a></li>
+                    <li><a href="#">Chargers</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="login-section">
+                <i class="fas fa-shopping-cart icon"></i>
+                <i class="far fa-user icon user"></i>
+            </div>
+        </section>
+
+    </header>
+     <!--Header section ends here-->
+
+     <!--Modal box starts here-->
+        <section class="modal-section">
+            <section class="modal">
+                <div class="modal__header">
+                    <i class="fas fa-times close"></i>
+                    <p class="text">Enter your Login Details</p> 
+                </div>
+                
+                <form action="" method="POST">
+        
+                    <div class="form-group">
+                        <label for="email" class="email-id">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="password" class="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+        
+                    <div class="login-group">
+                        <input type="submit" value="LOGIN" class="login-btn">
+                    </div>
+        
+                </form>
+        
+                <div class="modal__header footer ">
+                    <p class="footer-text"><a href="#">Click here</a> to sign up if you don't have an account
+                       <a href="#">Forgot password?</a></p>
+                </div>
+              </section>
+        </section>
+     
+    <!--Modal box ends here-->
+    
+    <main>
+        <!--Products section starts here-->
+
+        <section class="products">
+               <div class="products__product">
+                   <img src="img/black.jpg" alt="" class="img speaker1">
+                   <img src="img/blue.jpg" alt="" class="img speaker2">
+                   <img src="img/green.jpg" alt="" class="img speaker3">
+                   <img src="img/red.jpg" alt="" class="img speaker4">
+               </div>
+
+               <div class="products__details">
+                       <h1 class="text-xl">Roam 2</h1>
+                       <h4 class="text-sm">Wireless Speakers</h4>
+                       <h2 class="text-md">Explore Music. Enjoy Adventures.</h2>
+                       <p class="text-tiny">The Roam 2 wireless speaker with a boosted bass radiator is as travel 
+                           friendly as a speaker can get. 
+                           It is durable enough to bounce around and light enough for the life on-go.</p>
+
+                       <div class="colors-reviews">
+                           <h5 class="sl-col">SELECT COLOR</h5>
+                           <h5 class="sl-col space">63 REVIEWS</h5>
+                       </div>
+
+                       <div class="colors-reviews-img">
+                           <div class="colors">
+                               <span class="col black"></span>
+                               <span class="col blue" ></span>
+                               <span class="col green"></span>
+                               <span class="col red"></span>
+                           </div>
+
+                           <div class="reviews">
+                               <img src="img/icons/rating.png" alt="">
+                           </div>
+                       </div>
+
+                       <div class="price-section">
+                        <div class="price">
+                            <h4 class="text-sm">$19.00 &nbsp;<strike class="text-tiny">$25.00</strike></h4>
+                            <p class="discount">Get for <span class="space">$22.00</span> Use code <a href="#" class="red">MRM2</a></p>
+                            <p class="discount">Free <img src="img/icons/gaana.svg" alt="gaana">subscription <a href="#" class="know">Know more</a></p>
+                        </div>
+
+                        <div class="cart">
+                            <a href="#" class="cart__btn">add to cart</a>
+                        </div>
+                    </div>
+
+                    <div class="services">
+                           <div class="box">
+                               <img src="img/icons/shipping-2.svg" alt="" class="shipping">
+                               <p class="text">Free <br>Shipping</p>
+                           </div>
+
+                           <div class="box">
+                               <img src="img/icons/warranty-2.svg" alt="" class="shipping">
+                               <p class="text">1 Year<br>Warranty</p>
+                           </div>
+
+                           <div class="box">
+                               <img src="img/icons/flag.svg" alt="" class="shipping">
+                               <p class="text">Made in <br>India</p>
+                           </div>
+                    </div>
+                       
+               </div>
+        </section>
+
+        <!--Products section ends here-->
+    </main>
+
+    <footer class="footersection">
+        <div class="social">
+            <i class="fab fa-instagram icon"></i>
+            <i class="fab fa-facebook icon"></i>
+            <i class="fab fa-twitter-square icon"></i>
+            <i class="fab fa-youtube icon"></i>
+        </div>
+
+        <p class="name">Developed by: <span>Yash Lohar</span></p>
+    </footer>
+
+     <script src="js/modal.js"></script>
+     <script src="js/speakers.js"></script>
+</body>
+</html>

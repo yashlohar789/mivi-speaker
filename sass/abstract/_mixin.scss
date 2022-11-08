@@ -1,0 +1,15 @@
+@mixin inner{
+     max-width: 1240px;
+     margin: 0 auto;
+}
+
+@mixin flex{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+@mixin media($width){
+    @media only screen and (max-width:$width){
+        @content;
+    }
+}

@@ -1,0 +1,155 @@
+.header{
+    width: 100%;
+    background: radial-gradient(115.93% 71.58% at 73.5% 4.92%,#5b6378 0,#303642 39.67%,#111216 99.23%);
+    padding: 0 2rem;
+
+    /*Sub-Header-1 starts here*/
+
+    .subheader-1{
+        @include flex;
+        @include inner;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+
+        .text{
+            width: 50%;
+            @include flex;
+            align-items: center;
+            padding: 0 1rem;
+            cursor: pointer;
+
+            img{
+                display: inline-block;
+                margin-right: 1rem;
+            }
+            p{
+                display: inline-block;
+                color: $white;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+
+            &-right{
+                justify-content: flex-start;
+            }
+            &-left{
+                justify-content: flex-end;
+            }
+
+        }
+    }
+    /*Sub-Header-1 ends here*/
+
+     /*Sub-Header-2 starts here*/
+    .subheader-2{
+           @include inner;
+           padding: 1rem 0;
+           @include flex;
+           justify-content: space-between;
+           align-items: center;
+
+           
+
+           .logo-section{
+               @include flex;
+               justify-content: space-between;
+               align-items: center;
+
+               .menu{
+                   display: inline-block;
+                   margin-right: 2.5rem;
+                   opacity: 0;
+                   cursor: pointer;
+
+                   @include media(900px){
+                       opacity: 1;
+                   }
+               }
+
+               .logo{
+                   cursor: pointer;
+               }
+
+           }
+
+           .navigation-section{
+               flex-basis: 50%;
+
+               @include media(900px){
+                   flex-basis: 100%;
+                   order: 3;
+                   background-color: white;
+                   height: 600px;
+                   transform: translateY(1rem);
+                   transition: all .1s linear;
+                   display: none;
+                   overflow-x: hidden;
+               }
+
+               
+
+               ul{
+                   list-style-type: none;
+                   @include flex;
+                   justify-content: space-between;
+                   align-items: center;
+
+                   @include media(900px){
+                       flex-direction: column;
+                       overflow-x: hidden;
+                   }
+
+                   li{
+                       transition: all .1s linear;
+
+                        @include media(900px){
+                           width: 100%;
+                           text-align: center;
+                           padding: 1rem;
+                           overflow-x: hidden;
+                       }
+
+                       a{
+                           color: $white;
+                           display: inline-block;
+                           text-decoration: none;
+                           font-size: 1.5rem;
+                           font-weight: 600;
+
+                           @include media(900px){
+                               color: #4b4955;
+                           }
+                       }
+
+                       &:hover{
+                           border-bottom: 2px solid $primary-color;
+
+                           @include media(900px){
+                            border-bottom: none
+                          }
+                       }
+                   }
+               }
+           }
+
+           .login-section{
+               @include flex;
+               justify-content: space-between;
+               align-items: center;
+
+               .icon{
+                   color: $white;
+                   font-size: 1.5rem;
+                   padding: 0 1rem;
+                   cursor: pointer;
+               }
+           }
+    }
+
+     /*Sub-Header-2 ends here*/
+
+     .openmenu{
+         transform: translateY(1rem);
+     }
+}

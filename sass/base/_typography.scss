@@ -1,0 +1,75 @@
+.text-xl{
+    color:$black;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-top: 10rem;
+
+    @include media(1023px){
+       margin-top: 2rem; 
+    }
+
+    @include media(550px){
+        order: 2;
+    }
+
+    @include media(480px){
+        font-size: 3rem;
+    }
+}
+
+.text-sm{
+    color:$light-black;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+    @include media(550px){
+        order: 3;
+    }
+
+    @include media(480px){
+        font-size: 1.5rem;
+    }
+}
+
+.text-md{
+    color: $light-black;
+    font-size: 3rem;
+    font-weight: 500;
+
+    @include media(550px){
+        order: 4;
+    }
+
+    @include media(480px){
+        font-size: 2.3rem;
+    }
+}
+
+.text-tiny{
+     color: rgb(156, 155, 155);
+     font-size: 1.6rem;
+     font-weight: 600;
+
+     @include media(550px){
+        order: 5;
+    }
+
+    @include media(480px){
+        font-size: 1rem;
+    }
+}
+
+.sl-col{
+     color:$light-black;
+     font-size: 1.3rem;
+     font-weight: 600;
+     letter-spacing: .3rem;
+
+     @include media(550px){
+        margin-bottom: 1rem;
+    }
+}
+
+.space{
+    letter-spacing: 0;
+}
